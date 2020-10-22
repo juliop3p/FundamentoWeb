@@ -3,26 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/137131e49f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Rotten Tomatoes</title>
   </head>
   <body>
     <header>
-      <ul>
+      <ul class="nav">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./critic.html">Rotten Tomatoes</a></li>
       </ul>
     </header>
     <main>
       <div class="main-content">
-        <img src="./images/main.jpg" alt="Daredevil" />
-        <div class="points">
-          <div>
-            <strong class="percent">92%</strong>
-            <p>Average Tomatometer</p>
-          </div>
-          <div>
-            <strong class="percent">92%</strong>
-            <p>Average Audience Score</p>
+        <div class="flex">
+          <img src="./images/main.jpg" alt="Daredevil" />
+          <div class="points">
+            <div>
+              <div class="aligned">
+                <img src="./images/tomato.svg" alt="Tomato" />
+                <strong class="percent">92%</strong>
+              </div>
+              <p>Average Tomatometer</p>
+            </div>
+            <div>
+              <div class="aligned">
+                <img src="./images/popcorn.svg" alt="Pop Corn" />
+                <strong class="percent">92%</strong>
+              </div>
+              <p>Average Audience Score</p>
+            </div>
           </div>
         </div>
         <div class="info">
@@ -36,10 +53,15 @@
       </div>
       <div class="form">
         <form action="">
+          <h2>Descreva sua critíca:</h2>
           <input type="text" placeholder="Titulo da critíca" />
           <input type="text" placeholder="Sub-titulo da critíca" />
           <input type="text" placeholder="Seu nome" />
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Digite sua crítica"
+          ></textarea>
           <button type="submit">Salvar</button>
         </form>
       </div>

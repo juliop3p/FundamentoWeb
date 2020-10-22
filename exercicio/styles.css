@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #18292c;
+  list-style: none;
+}
+
+.nav li a {
+  margin: 0 16px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav li a:hover {
+  color: #ccc;
+}
+
+.nav li:nth-child(2) {
+  border-left: 1px solid #ccc;
+}
+
+.background {
+  height: 400px;
+  width: 100%;
+  background-image: url(./images/main.jpg);
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.tvshow {
+  max-width: 1200px;
+  margin: 32px auto;
+}
+
+main .season {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 32px 0;
+  overflow: hidden;
+  background-color: #18292c;
+  color: #fff;
+}
+
+main .season img {
+  width: 400px;
+  margin-right: 32px;
+}
+
+main .season div p {
+  margin-top: 8px;
+}
+
+.season .mr-0 {
+  margin: 0px;
+}
+
+main .season div {
+  padding: 0 32px;
+}
+
+.trailers {
+  background-color: #642549;
+  margin-bottom: 52px;
+}
+
+.trailers .w-1200 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trailers .w-1200 {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.trailers .trailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 32px 0;
+}
+
+.trailers .trailer iframe {
+  height: 250px;
+  width: 390px;
+}
+
+.trailers .trailer strong {
+  margin-bottom: 24px;
+}
+
+footer {
+  height: 52px;
+  border-top: 1px solid #eee;
+  box-shadow: 1px 1px 10px #999;
+  color: #e61c23;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Critic */
+
+.main-content {
+  max-width: 1200px;
+  margin: 32px auto;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 10px #eee;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .flex {
+  display: flex;
+}
+
+.main-content img {
+  width: 100px;
+}
+
+.main-content .points {
+  margin: 0 32px;
+  display: flex;
+  align-items: center;
+}
+
+.main-content .points .aligned {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content .points img {
+  width: 50px;
+  margin-right: 8px;
+}
+
+.main-content .points .percent {
+  font-size: 32px;
+}
+
+main-content .points {
+  font-size: 14px;
+}
+
+.main-content .points div {
+  margin: 0 32px;
+}
+
+.main-content .info {
+  border-top: 1px solid #eee;
+  margin-top: 24px;
+  padding-top: 24px;
+  color: #666;
+}
+
+.main-content .info p {
+  margin-top: 8px;
+}
+
+.form {
+  width: 100%;
+  margin: 48px 0;
+  background-color: #642549;
+}
+
+form {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  color: #fff;
+}
+
+form input {
+  height: 52px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+  text-indent: 12px;
+}
+
+form textarea {
+  height: 100px;
+  margin: 12px 0;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: none;
+  text-indent: 12px;
+}
+
+form button {
+  height: 52px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+@media (max-width: 1200px) {
+  .trailers .w-1200 {
+    flex-direction: column;
+  }
+}

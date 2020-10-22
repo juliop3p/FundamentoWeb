@@ -3,19 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/137131e49f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Daredevil</title>
   </head>
   <body>
     <header>
-      <ul>
+      <ul class="nav">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./critic.html">Rotten Tomatoes</a></li>
       </ul>
+      <div class="background"></div>
     </header>
 
     <main>
       <div class="tvshow">
-        <div class="season first-season">
+        <div class="season">
           <img src="./images/season-one.jpg" alt="Daredevil" />
           <div>
             <strong>Season One</strong>
@@ -30,8 +40,7 @@
           </div>
         </div>
         <!--  -->
-        <div class="season second-season">
-          <img src="./images/season-two.jpg" alt="Daredevil" />
+        <div class="season">
           <div>
             <strong>Season Two</strong>
             <p>
@@ -47,6 +56,7 @@
               means to be a hero.
             </p>
           </div>
+          <img src="./images/season-two.jpg" alt="Daredevil" class="mr-0" />
         </div>
         <!--  -->
         <div class="season third-season">
@@ -65,41 +75,36 @@
       </div>
       <!--  -->
       <div class="trailers">
-        <div class="trailer">
-          <strong>Season One Trailer</strong>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/jAy6NJ_D5vU"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <!--  -->
-        <div class="trailer">
-          <strong>Season Two Trailer</strong>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/2Cn3DVV0LHY"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <!--  -->
-        <div class="trailer">
-          <strong>Season Three Trailer</strong>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/n83s6NO1NE0"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <div class="w-1200">
+          <div class="trailer">
+            <strong>Season One Trailer</strong>
+            <iframe
+              src="https://www.youtube.com/embed/jAy6NJ_D5vU"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!--  -->
+          <div class="trailer">
+            <strong>Season Two Trailer</strong>
+            <iframe
+              src="https://www.youtube.com/embed/2Cn3DVV0LHY"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!--  -->
+          <div class="trailer">
+            <strong>Season Three Trailer</strong>
+            <iframe
+              src="https://www.youtube.com/embed/n83s6NO1NE0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
       </div>
     </main>
     <footer>
