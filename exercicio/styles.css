@@ -105,6 +105,7 @@ main .season div {
 .trailers .trailer iframe {
   height: 250px;
   width: 390px;
+  border-radius: 8px;
 }
 
 .trailers .trailer strong {
