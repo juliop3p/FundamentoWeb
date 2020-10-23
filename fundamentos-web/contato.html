@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -23,18 +23,23 @@
     <form>
       <h1>Entre em contato comigo</h1>
       <label for="nome">Nome: </label>
-      <input type="text" id="nome" />
+      <input type="text" id="nome" onkeyup="validaNome()" />
       <br />
       <br />
       <label for="email">E-mail: </label>
-      <input type="email" id="email" />
+      <input type="email" id="email" onkeyup="validaEmail()" />
       <br />
       <br />
       <label for="assunto">Assunto: </label>
-      <textarea name="assunto" id="assunto"></textarea>
+      <textarea
+        name="assunto"
+        id="assunto"
+        placeholder="maximo de 100 caracteres"
+        onkeyup="validaAssunto()"
+      ></textarea>
       <br />
       <br />
-      <button type="submit">Enviar</button>
+      <input type="button" value="Enviar" onclick="enviar()" />
     </form>
 
     <div class="video">
@@ -45,13 +50,16 @@
       </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098032246901!2d-46.654126284568804!3d-23.564922384681157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1603290265761!5m2!1spt-BR!2sbr"
-        width="800"
-        height="450"
+        width="500"
+        height="350"
         frameborder="0"
         style="border: 0"
         allowfullscreen=""
         aria-hidden="false"
         tabindex="0"
+        id="mapa"
+        onmousemove="mapaZoom()"
+        onmouseout="mapaNormal()"
       ></iframe>
     </div>
 
@@ -63,5 +71,7 @@
       </div>
       <div>&copy; 2020 JULIO</div>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
